@@ -7,10 +7,10 @@ This repository contains the code and data used to create the below animation:
 
 (It runs more smoothly in video format).
 
-* 1) The `Data Wrangling` python notebook is used to download and manipulate the GTFS data into a form necessary for animation.
+1) The `Data Wrangling` python notebook is used to download and manipulate the GTFS data into a form necessary for animation.
 
-* 2) The `gtfs` folder contains the raw gtfs that was downloaded using the python notebook
+2) The `gtfs` folder contains the raw gtfs that was downloaded using the python notebook
 
-* 3) The `data` folder contains the clean csv that was generated using the python notebook
+3) The `data` folder contains the clean csv that was generated using the python notebook
 
-* 4) The `sketch` folder contains the Processing code used to create the animation
+4) The `sketch` folder contains the Processing code used to create the animation
