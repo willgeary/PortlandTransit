@@ -15,4 +15,4 @@ This repository contains the code and data used to create the below animation:
 
 4) The `sketch` folder contains the Processing code used to create the animation
 
-To run this locally, simply download the repo, unzip the data.zip file, open the processing sketch and click play.
+To run this locally, simply download the repo, unzip the data.zip file, open the processing sketch and click play. You will need to have [Processing](https://processing.org/) and [Unfolding Maps](http://unfoldingmaps.org/) installed to play sketch. 
