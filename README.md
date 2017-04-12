@@ -11,6 +11,6 @@ This repository contains the code and data used to create the below animation:
 
 2) The `gtfs` folder contains the raw gtfs that was downloaded using the python notebook
 
-3) The `data` folder will contain the clean csv that gets generated using the python notebook, once the notebook is run
+3) The `data.zip` file contains the output csv of the python notebook.
 
 4) The `sketch` folder contains the Processing code used to create the animation
