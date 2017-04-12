@@ -14,3 +14,5 @@ This repository contains the code and data used to create the below animation:
 3) The `data.zip` file contains the output csv of the python notebook.
 
 4) The `sketch` folder contains the Processing code used to create the animation
+
+To run this locally, simply download the repo, unzip the data.zip file, open the processing sketch and click play.
