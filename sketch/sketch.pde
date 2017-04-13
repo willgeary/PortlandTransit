@@ -47,7 +47,6 @@ Date endDate;
 Date thisStartDate;
 Date thisEndDate;
 
-
 AbstractMapProvider provider1;
 AbstractMapProvider provider2;
 AbstractMapProvider provider3;
@@ -59,17 +58,14 @@ AbstractMapProvider provider8;
 AbstractMapProvider provider9;
 AbstractMapProvider provider0;
 
-
 void setup() {
   //size(1000, 860, P2D);
-  
   fullScreen(P2D);
   smooth();
   loadData();
   println("Finished loading data");
   
   // Choose map provider
-  
   
   provider1 = new OpenStreetMap.OpenStreetMapProvider();
   provider2 = new StamenMapProvider.TonerBackground();
@@ -90,7 +86,7 @@ void setup() {
   //map = new UnfoldingMap(this, new StamenMapProvider.TonerBackground());
   
   
-  // Center map on NYC
+  // Center map on Portland
   Location portland = new Location(45.522094, -122.6746037);
   int zoom = 11;
   map.zoomAndPanTo(zoom, portland);
@@ -170,38 +166,6 @@ void draw() {
   // String date = new java.text.SimpleDateFormat("MM/dd/yyyy hh:mm a").format(new java.util.Date(epoch * 1000L));
   String date = new java.text.SimpleDateFormat("EEEE MMMM d, yyyy").format(new java.util.Date(epoch * 1000L));
   String time = new java.text.SimpleDateFormat("h:mm a").format(new java.util.Date(epoch * 1000L));
-  
-  Location JFK = new Location(40.6413111,-73.7781391);
-  Location LGA = new Location(40.7769271,-73.8761546);
-  Location EWR = new Location(40.6895314,-74.1744624);
-     
-  // Create point markers for locations
-  SimplePointMarker JFKMarker = new SimplePointMarker(JFK);
-  SimplePointMarker LGAMarker = new SimplePointMarker(LGA);
-  SimplePointMarker EWRMarker = new SimplePointMarker(EWR);
-  
-  //JFKMarker.setColor(color(255, 255, 255, 0));
-  //JFKMarker.setStrokeColor(color(135,206,250, 100));
-  //JFKMarker.setStrokeWeight(5);
-  fill(255,255,255);
-  f = createFont("AppleSDGothicNeo-Bold", 40, true);  // Loading font
-  textFont(f, 18);
-  text("JFK", map.getScreenPosition(JFK).x-15, map.getScreenPosition(JFK).y+30);
-  
-  //LGAMarker.setColor(color(255, 255, 255, 0));
-  //LGAMarker.setStrokeColor(color(135,206,250, 100));
-  //LGAMarker.setStrokeWeight(5);
-  textFont(f, 18);
-  text("LGA", map.getScreenPosition(LGA).x, map.getScreenPosition(LGA).y-5);
-  
-  //EWRMarker.setColor(color(255, 255, 255, 0));
-  //EWRMarker.setStrokeColor(color(135,206,250, 100));
-  //EWRMarker.setStrokeWeight(5);
-  textFont(f, 18);
-  text("EWR", map.getScreenPosition(EWR).x-20, map.getScreenPosition(EWR).y+30);
-  
-  // Add markers to the map
-  //map.addMarkers(JFKMarker, LGAMarker, EWRMarker);
   
   // draw trips
   for (int i=0; i < trips.size(); i++) {
