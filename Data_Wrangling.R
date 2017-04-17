@@ -47,9 +47,13 @@ library(gganimate)
    st_crs(stops_sf) <- st_crs("+proj=longlat +ellps=WGS84")
    st_crs(shapes_sf) <- st_crs("+proj=longlat +ellps=WGS84")
 
+  # change projection to utm meters
+    stops_sf <- st_transform(stops_sf, "+proj=utm +ellps=WGS84 +units=m")
+    shapes_sf <- st_transform(shapes_sf, "+proj=utm +ellps=WGS84 +units=m")
+
 
 # Creater a 10 meter buffer around each stop
-  ?st_buffer(x, dist, nQuadSegs = 30)
+   stops_buffer <- st_buffer(stops_sf, dist=10 )
 
 # Overlay stop buffers with lat/long points of route shapes
 
